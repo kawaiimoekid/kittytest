@@ -16,16 +16,20 @@ namespace concatenation_arrays
                 $"Rectangle width: {bunnyRectangle.Width}" +
                 $"\nRectangle length: {bunnyRectangle.Length}" +
                 $"\nRectangle area: {bunnyRectangle.CalculateArea()}" +
-                $"\n"
+                $"\nRectangle shape:\n"
             );
 
-            var bunnySquare = new Rectangle(3);
+            bunnyRectangle.Draw();
 
+            var bunnySquare = new Rectangle(3);
             Console.WriteLine(
                 $"Square width: {bunnySquare.Width}" +
                 $"\nSquare length: {bunnySquare.Length}" +
-                $"\nSquare area: {bunnySquare.CalculateArea()}"
+                $"\nSquare area: {bunnySquare.CalculateArea()}" +
+                $"\nSquare shape:\n"
             );
+
+            bunnySquare.Draw();
         }
     }
 }
